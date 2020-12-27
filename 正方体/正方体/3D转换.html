@@ -1,0 +1,117 @@
+<!--
+ * @Author: 冷弋白
+ * @LastEditTime: 2020-12-13 21:29:30
+-->
+<!--
+ * @Author: 冷弋白
+ * @LastEditTime: 2020-12-12 01:47:43
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冷弋白的网页</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="room">
+        <div class="wall"></div>
+        <div class="wall"></div>
+        <div class="wall"></div>
+        <div class="wall"></div>
+        <div class="wall"></div>
+        <div class="wall"></div>
+    </div>
+    <div class="alert"></div>
+    <div class="change">
+        <h1>自定义</h1>
+        <div class="custom">
+            <div class="animationDuration">
+                <p>旋转时间</p>
+                <input type="text">
+            </div>
+            <div class="sensitivity">
+                <p>灵敏度调节(1>进入敏感区)</p>
+                <input type="text">
+            </div>
+            <div class="xLimit">
+                <p>解除X轴范围旋转限制</p>
+                <input type="checkbox" class="flag">
+            </div>
+            <div class="color">
+                <p>颜色选择</p>
+                <ul>
+                    <li>1:<input type="color"></li>
+                    <li>2:<input type="color"></li>
+                    <li>3:<input type="color"></li>
+                    <li>4:<input type="color"></li>
+                    <li>5:<input type="color"></li>
+                    <li>6:<input type="color"></li>
+                </ul>
+            </div>
+            <div class="theme">
+                <p>颜色主题</p>
+                <button>浅色模式</button>
+            </div>
+            <div class="size">
+                <p>体积大小</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+    <div class="cube">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </div>
+    <div class="Test">
+        <h1>调试信息</h1>
+        <div class="test">
+            <p>当前旋转时间为：<i></i>
+            </p>
+            <p>
+                当前灵敏度：<i></i>
+            </p>
+            <p>是否接触X轴范围旋转限制：<i></i>
+            </p>
+            <p>当前使用颜色:
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+            </p>
+            <p>
+                当前颜色主题：<i></i>
+            </p>
+            <p>
+                当前正方体大小：<i></i>
+            </p>
+            <p>当前鼠标X坐标：<i></i>
+            </p>
+            <p>当前鼠标Y坐标：</p>
+            <p>
+                当前X轴已旋转度数：<i></i>
+            </p>
+            <p>当前Y轴已旋转度数：<i></i>
+            </p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="index.js"></script>
+    <script src="default.js"></script>
+</body>
+
+</html>
