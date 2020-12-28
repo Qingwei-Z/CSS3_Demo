@@ -6,29 +6,36 @@
 body {
     background-color: #000;
     display: flex;
+    /* 在flex中
+    justify-content控制横轴对齐方式
+    align-items控制竖轴对其方式 */
     justify-content: center;
     align-items: center;
+    /* vw，vh为视窗高度的百分比 */
     width: 100vw;
     height: 100vh;
 }
-
+/* 四个按钮的 */
 ul {
     width: 60vw;
     display: flex;
+    /* space-between 项目位于各行之间留有空白的容器内 */
     justify-content: space-between;
     align-items: center;
 }
 
 li {
+    /* 取消列表默认的小圆点 */
     list-style: none;
 }
 
 a {
     position: relative;
     color: #FFF;
+    /* 取消下划线 */
     text-decoration: none;
     padding: 6px 18px;
-    /* background-color: #3ce745; */
+/*     background-color: #3ce745; */
     transition: background-color 0.8s;
 }
 
@@ -36,6 +43,15 @@ a:hover {
     background-color: #e74c3c;
 }
 
+
+/* 
+实现思路
+1.before和after分别设置两个红色的框，content无内容
+2.opacity 设置透明级别 0（完全透明）
+3.分别把右上，左下边框宽度设为0
+4.绝对定位，分别将剩余的两个边框设置在左下，右上
+5.transition 设置0.2s过渡
+*/
 a::before {
     position: absolute;
     content: "";
@@ -46,7 +62,7 @@ a::before {
     left: 0;
     bottom: 0;
     opacity: 0;
-    transition: 0.2s;
+    transition: 0.2s; 
 }
 
 a::after {
