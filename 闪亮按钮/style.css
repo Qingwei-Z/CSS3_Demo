@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  position: relative;
+  color: #fff;
+  background-color: #4b385b;
+  text-decoration: none;
+  padding: 12px 30px;
+  margin: 30px;
+  letter-spacing: 6px;
+  border: 1px solid #130f36;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+a:nth-child(1):hover{
+  background-color: #ff6700;
+}
+a:nth-child(2):hover{
+  background-color: #b088f9;
+}
+
+a::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  /* linear-gradient渐变
+     transparent为全透明黑色
+     即为rgba（0,0,0,0） */
+  /* 此处背景图片为 linear-gradient生成的角度为60度的白色渐变条纹
+     两个transparent将白色条纹完整显示
+  */
+
+  background-image: linear-gradient(60deg,transparent,transparent,#fff,transparent,transparent);
+  transition: left  0.5s;
+}
+
+a:hover::before{
+  left: 100%;
+}
