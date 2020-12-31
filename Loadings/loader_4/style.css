@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3436;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after, .loader::before{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  background-color: aqua;
+}
+
+/*animation alternate 控制反向播放，小球实现从无到有，从有到无 */
+.loader::before{
+  top: 0;
+  background-color: #bedcfa;
+  animation: scale 1s infinite ease-in-out  alternate;
+}
+
+.loader::after{
+  bottom: 0;
+  background-color: #b088f9;
+  animation: scale 1s 0.5s infinite ease-in-out  alternate;
+}
+
+@keyframes rotation{
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes scale{
+  0%{
+    transform:scale(1)
+  }
+  100%{
+    transform:scale(0)
+  }
+}

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3436;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  position: relative;
+/*   background-color: royalblue;  */
+  /* 动画 名字 循环时间  头尾速度相同 无限循环*/
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after,.loader::before{
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  /* 旋转 2D转换 */
+  transform: translate(0,-50%);
+  border-radius: 50%;
+}
+
+.loader::after{
+  left: 0;
+  background-color:#bedcfa;
+}
+.loader::before{
+  right: 0;
+  background-color: #b088f9;
+}
+
+@keyframes rotation{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

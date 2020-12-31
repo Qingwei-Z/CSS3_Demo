@@ -1,0 +1,228 @@
+body{
+  background-color: #243436;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+ul{
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline-start: 0px;
+}
+li{
+  list-style: none;
+  margin: 48px;
+}
+
+
+/* loader_1  */
+.loader_1 {
+  margin: 64px;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: red;
+  /* 
+    box-shadow 阴影
+    h-shadow/v-shadow 水平、垂直位置
+    blur 模糊距离
+    spread 阴影大小
+    color 阴影颜色
+    inset 内外层阴影
+  */
+  box-shadow:-24px 0 #fff,24px 0 #fff;
+  /* 
+    animation  动画属性
+    animation-name rotation  动画指定名称
+    animation-duration 1.5s  动画完成时间
+    animation-timing-function ease-in-out  指定动画完成效果   动画以低速开始和结束
+    animation-iteration-count infinite  播放次数   无限次    
+   */
+  animation: rotation_1 1.5s ease-in-out infinite;
+}
+
+@keyframes rotation_1 {
+  0%{
+    transform: rotate(0deg)
+  }
+    100%{
+    transform: rotate(360deg)
+  }
+}
+
+/* loader_2 */
+.loader_2 {
+  width: 48px;
+  height: 48px;
+  position: relative;
+/*   background-color: royalblue;  */
+  /* 动画 名字 循环时间  头尾速度相同 无限循环*/
+  animation: rotation_2 1s linear infinite;
+}
+
+.loader_2::after,.loader_2::before{
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  /* 旋转 2D转换 */
+  transform: translate(0,-50%);
+  border-radius: 50%;
+}
+
+.loader_2::after{
+  left: 0;
+  background-color:#bedcfa;
+}
+.loader_2::before{
+  right: 0;
+  background-color: #b088f9;
+}
+
+@keyframes rotation_2{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* loader_3 */
+.loader_3 {
+  width: 48px;
+  height: 48px;
+  position: relative;
+ /*  background-color: #999 ; */
+  animation: rotation_3 1s linear infinite alternate;
+}
+
+.loader_3::after, .loader_3::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transform: translate(0,-50%);
+  background-color: aqua;
+  top: 50%;
+}
+
+.loader_3::after{
+  right: 0;
+  background-color: #bedcfa;
+}
+.loader_3::before{
+  left: 0;
+  background-color: #b088f9;
+}
+
+@keyframes rotation_3{
+  0%{
+    transform:scale(1) rotate(0deg)
+  }
+  100%{
+    transform:scale(0) rotate(360deg)
+  }
+}
+
+/* loader_4 */
+.loader_4 {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  animation: rotation_4 1s linear infinite;
+}
+
+.loader_4::after, .loader_4::before{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  background-color: aqua;
+}
+
+.loader_4::before{
+  top: 0;
+  background-color: #bedcfa;
+  animation: scale_4 1s infinite ease-in-out  alternate;
+}
+
+.loader_4::after{
+  bottom: 0;
+  background-color: #b088f9;
+  animation: scale_4 1s 0.5s infinite ease-in-out  alternate;
+}
+
+@keyframes rotation_4{
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes scale_4{
+  0%{
+    transform:scale(1)
+  }
+  100%{
+    transform:scale(0)
+  }
+}
+
+/* loader_5 */
+.loader_5 {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  animation: rotation_5 1s linear infinite;
+}
+
+.loader_5::after, .loader_5::before{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  background-color: aqua;
+  animation: animation_5 1s ease-in-out infinite;
+}
+
+.loader_5::after{
+  background-color: #b088f9;
+  transform: scale(0.5) translate(0,0);
+}
+
+.loader_5::before{
+  background-color: #bedcfa;
+  transform: scale(0.5) translate(-200%,-200%);
+}
+
+@keyframes animation_5{
+  50%{
+    transform:scale(1) translate(-50%,-50%)
+  }
+}
+
+@keyframes rotation_5{
+  0%{
+    transform:rotate(0deg)
+  }
+  100%{
+    transform:rotate(360deg)
+  }
+}

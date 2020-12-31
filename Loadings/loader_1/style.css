@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3436;
+}
+
+.loader {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: red;
+  /* 
+    box-shadow 阴影
+    h-shadow/v-shadow 水平、垂直位置
+    blur 模糊距离
+    spread 阴影大小
+    color 阴影颜色
+    inset 内外层阴影
+  */
+  box-shadow:-24px 0 #fff,24px 0 #fff;
+  /* 
+    animation  动画属性
+    animation-name rotation  动画指定名称
+    animation-duration 1.5s  动画完成时间
+    animation-timing-function ease-in-out  指定动画完成效果   动画以低速开始和结束
+    animation-iteration-count infinite  播放次数   无限次    
+   */
+  animation: rotation 1.5s ease-in-out infinite;
+}
+
+/* 
+  transform 旋转属性
+  rotate(angle) 2D旋转 角度单位 deg
+*/
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg)
+  }
+    100%{
+    transform: rotate(360deg)
+  }
+}
