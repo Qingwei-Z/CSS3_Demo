@@ -1,0 +1,60 @@
+/* 声明全局变量。 */
+:root{
+  --background-color: #2c3e50;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.bt{
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  border: 4px solid;
+  padding: 12px 24px;
+  position: relative;
+}
+
+a.bt::after,a.bt::before{
+  content: "";
+  position: absolute;
+  /* 使用全局变量 */
+  background-color: var(--background-color);
+  width: 24px;
+  height: 4px;
+  /* transform 应用于元素的2D或3D转换 */
+    /* skew 定义了一个元素在二维平面上的倾斜转换 */
+  transform: skew(-30deg);
+  /* transition 过渡效果 */
+  transition: 0.2s linear;
+  /* transform 和 transition 别搞混咯 */
+}
+
+a.bt::after{
+  bottom: -4px;
+  right: 20%;
+}
+
+a.bt::before{
+  top: -4px;
+  left: 20%;
+}
+
+a.bt:hover::before{
+  left: 80%;
+}
+
+a.bt:hover::after{
+  right: 80%;
+}
