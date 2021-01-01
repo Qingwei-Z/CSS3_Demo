@@ -20,3 +20,9 @@
 - ## Loading旋转合集
 
 ![Loading](README.assets/Loading.gif)
+
+
+
+- ## 移动框键
+
+  <img src="README.assets/%E7%A7%BB%E5%8A%A8%E6%A1%86%E9%94%AE.gif" alt="移动框键" style="zoom:80%;" />
