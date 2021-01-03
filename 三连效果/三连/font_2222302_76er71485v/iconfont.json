@@ -1,0 +1,30 @@
+{
+  "id": "2222302",
+  "name": "1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2154256",
+      "name": "B币_32",
+      "font_class": "Bbi",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "2418255",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "6237085",
+      "name": "点赞",
+      "font_class": "tubiaozhizuo-",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    }
+  ]
+}
