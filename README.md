@@ -30,3 +30,7 @@
 - ## 双螺旋体
 
   <img src="README.assets/%E5%8F%8C%E8%9E%BA%E6%97%8B%E4%BD%93.gif" alt="双螺旋体" style="zoom:80%;" />
+
+- ## 三连效果
+
+![三连](README.assets/%E4%B8%89%E8%BF%9E.gif)
