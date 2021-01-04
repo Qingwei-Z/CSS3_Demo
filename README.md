@@ -6,7 +6,7 @@
 
 - ## 炫彩按钮
 
-  <img src="README.assets/%E7%82%AB%E5%BD%A9%E6%8C%89%E9%92%AE.gif" alt="炫彩按钮" style="zoom:33%;" />
+  <img src="README.assets/%E7%82%AB%E5%BD%A9%E6%8C%89%E9%92%AE.gif" alt="炫彩按钮" style="zoom: 80%;" />
 
 
 - ## 闪亮按钮
@@ -15,11 +15,11 @@
 
 - ## 荧光背景
 
-![image-20201230233154964](README.assets/image-20201230233154964.png)
+<img src="README.assets/image-20201230233154964.png" alt="image-20201230233154964" style="zoom:80%;" />
 
 - ## Loading旋转合集
 
-![Loading](README.assets/Loading.gif)
+<img src="README.assets/Loading.gif" alt="Loading" style="zoom:80%;" />
 
 
 
@@ -33,4 +33,8 @@
 
 - ## 三连效果
 
-![三连](README.assets/%E4%B8%89%E8%BF%9E.gif)
+<img src="README.assets/%E4%B8%89%E8%BF%9E.gif" alt="三连" style="zoom:80%;" />
+
+- ## LoadingCircle
+
+<img src="README.assets/LoadingCircle.gif" alt="LoadingCircle" style="zoom:80%;" />
