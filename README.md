@@ -38,3 +38,19 @@
 - ## LoadingCircle
 
 <img src="README.assets/LoadingCircle.gif" alt="LoadingCircle" style="zoom:80%;" />
+
+- ## 涟漪按钮
+
+  <img src="README.assets/%E6%B6%9F%E6%BC%AA%E6%8C%89%E9%92%AE.gif" alt="涟漪按钮" style="zoom:80%;" />
+
+- ## 弹跳小球
+
+  <img src="README.assets/%E5%BC%B9%E8%B7%B3%E5%B0%8F%E7%90%83.gif" alt="弹跳小球" style="zoom:80%;" />
+
+- ## 单选特效
+
+  <img src="README.assets/%E5%8D%95%E9%80%89%E7%89%B9%E6%95%88.gif" alt="单选特效" style="zoom:80%;" />
+
+- ## 复选特效
+
+  <img src="README.assets/%E5%A4%8D%E9%80%89%E7%89%B9%E6%95%88.gif" alt="复选特效" style="zoom:80%;" />
